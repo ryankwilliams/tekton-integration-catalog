@@ -52,6 +52,7 @@ spec:
           secret-key: ${secret_key}
           region: ${region}
           bucket: ${bucket}
+          vpc-id: ${vpc_id}
     - name: id
       description: A unique identifier for this Kind environment
     - name: cluster-access-secret-name
@@ -224,9 +225,9 @@ spec:
         resolver: git
         params:
           - name: url
-            value: https://github.com/konflux-ci/tekton-integration-catalog.git
+            value: https://github.com/ryankwilliams/tekton-integration-catalog.git
           - name: revision
-            value: main
+            value: AAP-94453
           - name: pathInRepo
             value: stepactions/kind-aws-provisioner/0.1/kind-aws-provisioner.yaml
       params:
